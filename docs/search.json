@@ -11,14 +11,14 @@
     "href": "index.html",
     "title": "My Awesome CSCI 0451 Blog",
     "section": "",
-    "text": "In this blog post, I will implement the perceptron algorithm using numerical programming and demonstrate its use on synthetic data sets.\n\n\n\n\n\n\nFeb 19, 2023\n\n\nTrong Le\n\n\n\n\n\n\n  \n\n\n\n\n\n\n\n\nAn example blog post illustrating the key techniques you’ll need to demonstrate your learning in CSCI 0451.\n\n\n\n\n\n\nJan 10, 2023\n\n\nPhil Chodrow\n\n\n\n\n\n\nNo matching items"
+    "text": "Optimization algorithms based on the gradients of functions.\n\n\n\n\n\n\nFeb 26, 2023\n\n\nTrong Le\n\n\n\n\n\n\n  \n\n\n\n\n\n\n\n\nIn this blog post, I will implement the perceptron algorithm using numerical programming and demonstrate its use on synthetic data sets.\n\n\n\n\n\n\nFeb 19, 2023\n\n\nTrong Le\n\n\n\n\n\n\n  \n\n\n\n\n\n\n\n\nAn example blog post illustrating the key techniques you’ll need to demonstrate your learning in CSCI 0451.\n\n\n\n\n\n\nJan 10, 2023\n\n\nPhil Chodrow\n\n\n\n\n\n\nNo matching items"
   },
   {
     "objectID": "posts/example-blog-post/index.html",
     "href": "posts/example-blog-post/index.html",
     "title": "Hello Blog",
     "section": "",
-    "text": "This is an example of the blog posts that you’ll submit as your primary form of learning demonstration in CSCI 0451. I created this post by modifying the file posts/example-blog-post/index.ipynb in VSCode. You can also use JupyterLab for this editing if you prefer. Finally, it is possible to write blog posts without using notebooks by writing .qmd files, as illustrated here."
+    "text": "beta*(w_tilda - w_tilda_prev) # this is w_{k+1} w_tilda_prev = w_tilda # this is w_{k-1} w_tilda = w_tilda_new # this is w_{k}\nThis is an example of the blog posts that you’ll submit as your primary form of learning demonstration in CSCI 0451. I created this post by modifying the file posts/example-blog-post/index.ipynb in VSCode. You can also use JupyterLab for this editing if you prefer. Finally, it is possible to write blog posts without using notebooks by writing .qmd files, as illustrated here."
   },
   {
     "objectID": "posts/example-blog-post/index.html#math",
