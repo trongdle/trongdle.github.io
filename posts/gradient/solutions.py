@@ -40,7 +40,7 @@ class LogisticRegression():
         # loop until we get the best weight or until we reach max number of loops
         while not done and epoch < max_epochs: 
             y_hat = np.dot(X_tilda, w_tilda) #inner product between X and w
-            deltaL = np.average((sigmoid(y_hat) - y)[:,np.newaxis]*X_tilda) #deltaL as given by the formula
+            deltaL = 1/n*(sigmoid(y_hat) - y)@X_tilda #deltaL as given by the formula
             w_tilda -= alpha*deltaL #update the weight
             new_loss = logistic_loss(y_hat, y).mean() # compute loss
             y_pred = 1*(np.dot(X_tilda, w_tilda) >= 0) #prediction vector given by the weight
@@ -126,7 +126,7 @@ class LogisticRegression():
                 X_batch = X_tilda[batch,:]
                 y_batch = y[batch]
                 y_hat = np.dot(X_batch, w_tilda)
-                deltaL = np.average((sigmoid(y_hat) - y_batch)[:,np.newaxis]*X_batch) # compute delta L
+                deltaL = 1/batch_size*(sigmoid(y_hat) - y_batch)@X_batch # compute delta L
                 w_tilda_new = w_tilda - alpha * deltaL + beta*(w_tilda - w_tilda_prev) # this is w_{k+1} for this loop
                 w_tilda_prev = w_tilda # this is w_{k-1} for next loop
                 w_tilda = w_tilda_new # this is w_{k} for next loop
