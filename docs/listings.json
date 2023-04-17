@@ -2,6 +2,7 @@
   {
     "listing": "/index.html",
     "items": [
+      "/posts/adam/adam.html",
       "/posts/unsupervised/unsupervised.html",
       "/posts/audit/audit.html",
       "/posts/linear-regression/linear-regression.html",
