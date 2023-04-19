@@ -4,12 +4,12 @@
     "href": "about.html",
     "title": "About",
     "section": "",
-    "text": "About this blog I do not understand"
+    "text": "I am Trong, a recent graduate from Middlebury College with a major in Physics and minor in Computer Science. This blog outlines my journey towards a basic understanding of machine learning and deep learning, and my plan to incorporate this knowledge into physics studies."
   },
   {
     "objectID": "index.html",
     "href": "index.html",
-    "title": "My Awesome CSCI 0451 Blog",
+    "title": "Introductory Machine Learning",
     "section": "",
     "text": "Preparation for Dr. Gebru’s talk at Middlebury College.\n\n\n\n\n\n\nApr 18, 2023\n\n\nTrong Le\n\n\n\n\n\n\n  \n\n\n\n\n\n\n\n\nThe Adam optimizer and some simple experiments.\n\n\n\n\n\n\nApr 17, 2023\n\n\nTrong Le\n\n\n\n\n\n\n  \n\n\n\n\n\n\n\n\nLinear algebra methods for unsupervised learning with two kinds of data: images and graphs\n\n\n\n\n\n\nApr 13, 2023\n\n\nTrong Le\n\n\n\n\n\n\n  \n\n\n\n\n\n\n\n\nIn this blog post, I will create a machine learning model that predicts an individual characteristic like employment status or income on the basis of other demographic characteristics.\n\n\n\n\n\n\nMar 25, 2023\n\n\nTrong Le\n\n\n\n\n\n\n  \n\n\n\n\n\n\n\n\nIn this blog post, I will implement least-squares linear regression, and experiment with LASSO regularization for overparameterized problems.\n\n\n\n\n\n\nMar 23, 2023\n\n\nTrong Le\n\n\n\n\n\n\n  \n\n\n\n\n\n\n\n\nClassifying Palmer Penguins with Sklearn.\n\n\n\n\n\n\nMar 7, 2023\n\n\nTrong Le\n\n\n\n\n\n\n  \n\n\n\n\n\n\n\n\nOptimization algorithms based on the gradients of functions.\n\n\n\n\n\n\nFeb 26, 2023\n\n\nTrong Le\n\n\n\n\n\n\n  \n\n\n\n\n\n\n\n\nIn this blog post, I will implement the perceptron algorithm using numerical programming and demonstrate its use on synthetic data sets.\n\n\n\n\n\n\nFeb 19, 2023\n\n\nTrong Le\n\n\n\n\n\n\n  \n\n\n\n\n\n\n\n\nAn example blog post illustrating the key techniques you’ll need to demonstrate your learning in CSCI 0451.\n\n\n\n\n\n\nJan 10, 2023\n\n\nPhil Chodrow\n\n\n\n\n\n\nNo matching items"
   },
