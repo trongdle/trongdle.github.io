@@ -1,0 +1,292 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en"><head>
+
+<meta charset="utf-8">
+<meta name="generator" content="quarto-1.1.189">
+
+<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
+
+<meta name="author" content="Trong Le">
+<meta name="dcterms.date" content="2023-04-18">
+<meta name="description" content="Preparation for Dr.&nbsp;Gebru’s talk at Middlebury College.">
+
+<title>My Awesome Introductory Machine Learning Blog - Learning from Timnit Gebru</title>
+<style>
+code{white-space: pre-wrap;}
+span.smallcaps{font-variant: small-caps;}
+div.columns{display: flex; gap: min(4vw, 1.5em);}
+div.column{flex: auto; overflow-x: auto;}
+div.hanging-indent{margin-left: 1.5em; text-indent: -1.5em;}
+ul.task-list{list-style: none;}
+ul.task-list li input[type="checkbox"] {
+  width: 0.8em;
+  margin: 0 0.8em 0.2em -1.6em;
+  vertical-align: middle;
+}
+</style>
+
+
+<script src="../../site_libs/quarto-nav/quarto-nav.js"></script>
+<script src="../../site_libs/quarto-nav/headroom.min.js"></script>
+<script src="../../site_libs/clipboard/clipboard.min.js"></script>
+<script src="../../site_libs/quarto-search/autocomplete.umd.js"></script>
+<script src="../../site_libs/quarto-search/fuse.min.js"></script>
+<script src="../../site_libs/quarto-search/quarto-search.js"></script>
+<meta name="quarto:offset" content="../../">
+<script src="../../site_libs/quarto-html/quarto.js"></script>
+<script src="../../site_libs/quarto-html/popper.min.js"></script>
+<script src="../../site_libs/quarto-html/tippy.umd.min.js"></script>
+<script src="../../site_libs/quarto-html/anchor.min.js"></script>
+<link href="../../site_libs/quarto-html/tippy.css" rel="stylesheet">
+<link href="../../site_libs/quarto-html/quarto-syntax-highlighting.css" rel="stylesheet" id="quarto-text-highlighting-styles">
+<script src="../../site_libs/bootstrap/bootstrap.min.js"></script>
+<link href="../../site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
+<link href="../../site_libs/bootstrap/bootstrap.min.css" rel="stylesheet" id="quarto-bootstrap" data-mode="light">
+<script id="quarto-search-options" type="application/json">{
+  "location": "navbar",
+  "copy-button": false,
+  "collapse-after": 3,
+  "panel-placement": "end",
+  "type": "overlay",
+  "limit": 20,
+  "language": {
+    "search-no-results-text": "No results",
+    "search-matching-documents-text": "matching documents",
+    "search-copy-link-title": "Copy link to search",
+    "search-hide-matches-text": "Hide additional matches",
+    "search-more-match-text": "more match in this document",
+    "search-more-matches-text": "more matches in this document",
+    "search-clear-button-title": "Clear",
+    "search-detached-cancel-button-title": "Cancel",
+    "search-submit-button-title": "Submit"
+  }
+}</script>
+<style>
+    .quarto-title-block .quarto-title-banner {
+      color: white;
+background-image: url(../../img/landscape.png);
+background-size: cover;
+    }
+    </style>
+
+
+<link rel="stylesheet" href="../../styles.css">
+</head>
+
+<body class="nav-fixed fullcontent">
+
+<div id="quarto-search-results"></div>
+  <header id="quarto-header" class="headroom fixed-top">
+    <nav class="navbar navbar-expand-lg navbar-dark ">
+      <div class="navbar-container container-fluid">
+      <div class="navbar-brand-container">
+    <a class="navbar-brand" href="../../index.html">
+    <span class="navbar-title">My Awesome Introductory Machine Learning Blog</span>
+    </a>
+  </div>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse" aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">
+  <span class="navbar-toggler-icon"></span>
+</button>
+          <div class="collapse navbar-collapse" id="navbarCollapse">
+            <ul class="navbar-nav navbar-nav-scroll ms-auto">
+  <li class="nav-item">
+    <a class="nav-link" href="../../about.html">About</a>
+  </li>  
+  <li class="nav-item compact">
+    <a class="nav-link" href="https://github.com/trongdle"><i class="bi bi-github" role="img">
+</i> 
+ </a>
+  </li>  
+  <li class="nav-item compact">
+    <a class="nav-link" href="https://www.linkedin.com/in/duc-trong-le-5a2654224/"><i class="bi bi-linkedin" role="img">
+</i> 
+ </a>
+  </li>  
+</ul>
+              <div id="quarto-search" class="" title="Search"></div>
+          </div> <!-- /navcollapse -->
+      </div> <!-- /container-fluid -->
+    </nav>
+</header>
+<!-- content -->
+<header id="title-block-header" class="quarto-title-block default page-columns page-full">
+  <div class="quarto-title-banner page-columns page-full">
+    <div class="quarto-title column-body">
+      <h1 class="title">Learning from Timnit Gebru</h1>
+                  <div>
+        <div class="description">
+          Preparation for Dr.&nbsp;Gebru’s talk at Middlebury College.
+        </div>
+      </div>
+                </div>
+  </div>
+    
+  
+  <div class="quarto-title-meta">
+
+      <div>
+      <div class="quarto-title-meta-heading">Author</div>
+      <div class="quarto-title-meta-contents">
+               <p>Trong Le </p>
+            </div>
+    </div>
+      
+      <div>
+      <div class="quarto-title-meta-heading">Published</div>
+      <div class="quarto-title-meta-contents">
+        <p class="date">April 18, 2023</p>
+      </div>
+    </div>
+      
+    </div>
+    
+  
+  </header><div id="quarto-content" class="quarto-container page-columns page-rows-contents page-layout-article page-navbar">
+<!-- sidebar -->
+<!-- margin-sidebar -->
+    
+<!-- main -->
+<main class="content quarto-banner-title-block" id="quarto-document-content">
+
+
+
+
+<section id="part-1-questions-for-dr.-gebru" class="level1">
+<h1>Part 1: Questions for Dr.&nbsp;Gebru</h1>
+<p><strong>Introduction</strong></p>
+<p>On April 24, in class, we will have a chance to have a virtual Q&amp;A session with Dr.&nbsp;Gebru about her recent work in AI ethics. In the evening of April 24th, at 7pm in Hillcrest 103, Dr.&nbsp;Gebru will give a talk on “Eugenics and the Promise of Utopia through Artificial General Intelligence.”</p>
+<p>Dr.&nbsp;Gebru has gained international recognition due to her groundbreaking research and contributions to the field. Her work has been instrumental in highlighting the impact of AI on marginalized communities, exposing bias in machine learning, and emphasizing the importance of ethical considerations in the development of AI systems. Dr.&nbsp;Gebru’s expertise in the field is highly sought after, and her presence at Middlebury College is a significant event that is sure to provide unparalleled insights and inspire important conversations about the evils that artificial intelligence is capable of.</p>
+<p><strong>Dr.&nbsp;Gebru’s Talk</strong></p>
+<p>In 2020, Dr.&nbsp;Gebru gave a talk as part of a <strong><a href="https://sites.google.com/view/fatecv-tutorial/home?authuser=0">Tutorial on Fairness, Accountability, Transparency, and Ethics (FATE) in Computer Vision</a></strong> at the conference on Computer Vision and Pattern Recognition 2020. The recording of her talk can be found <strong><a href="https://www.youtube.com/watch?v=0sBE5OyD7fk&amp;t=802s">here</a></strong>.</p>
+<p>During her talk, Dr.&nbsp;Gebru spoke at length about the intrusive and destructive use of artificial intelligence on marginalized groups. For example, facial recognition was used to match protestors to their social media to ensure arrests. Allegedly, with the help of robot police, nobody is safe from profiling. That robot police hate minorities as much as human police is a result of bias in datasets used to train computer vision systems. Dr.&nbsp;Gebru noted that many of these datasets were collected, trained, sold, and used by white people and corporations, which unavoidably led to ineffective predictive models for minorities. She argued that computer vision systems are not neutral technologies but are instead shaped by the social, cultural, and political contexts in which they are used. As such, it is important to consider how these systems may impact different communities and to ensure that they are designed and used in ways that are both equitable and just.</p>
+<p>Another issue with these models is that even if a model works equally well on anyone (i.e.&nbsp;no bias), it can still be bad. For example, if the AI model predicts that a user is female, it will direct advertisements about things that women are encouraged to use, thus reinforcing existing stereotypes and discriminations. In a broader context, Dr.&nbsp;Gebru noted that by making a model ‘fairer’, we would only make the institutions that use the model colder and more punitive.</p>
+<p>Dr.&nbsp;Gebru also argued that a ‘good’ model could still inflict harm on minorities if it falls into the wrong hands. This is because researchers in the field over-abstract their work, up to the point where humans in a study are disappeared into mathematical equations. It is important to consider that when working with data, we see subjects and objects, but on both sides are human beings. The most effective way to stop AI from inflicting harm is for scientists to actively prevent marginalization when they are working on their models.</p>
+<p>tl;dr</p>
+<p>The primary takeaway from Dr.&nbsp;Gebru’s talk is that computer vision systems are not neutral technologies but are instead shaped by the social, cultural, and political contexts in which they are used, and as such, it is important to consider the potential biases and impact of these systems on marginalized communities.</p>
+<p><strong>Questions for Dr.&nbsp;Gebru</strong></p>
+<p>In Dr.&nbsp;Gebru’s view, what role should policymakers play in addressing issues of bias and fairness in the development and deployment of computer vision systems, and what steps can they take to ensure that these systems are designed and used in ways that are both equitable and just?</p>
+</section>
+<section id="part-2-dr.-gebrus-talk-at-middlebury" class="level1">
+<h1>Part 2: Dr.&nbsp;Gebru’s Talk “At” Middlebury</h1>
+<p>When Dr.&nbsp;Gebru visited our class, she said that there is no incentive for corporate accountability to exist. The sole goal of businesses is to maximize profit regardless of the harm they cause. The incentive for accountability must therefore come from regulation and workers themselves, via unionizing etc.</p>
+<p>There is no regulation on AI for businesses, however. Internal ethics departments in these businesses hold no power other than to shut down any external concerns about diversity etc. This means that the incentive for accountability must come from workers.</p>
+<p>One might argue that AI scientists and engineers can create models that uplift rather than harm. However, the biggest investor in AI is the military, which means that whatever you build will go towards that, and scientists don’t have much say in what needs to be built. Furthermore, most scientists and engineers are aligned with power, and this leads them to create tools that persecute problems rather than prevent them.</p>
+<p>I agree with all of what Dr.&nbsp;Gebru said during this talk. I agree that there needs to be some sort of FDA to regulate technology and keep in check the harm that it can cause. But I doubt that there will be any kind of regulation as long as the military is involved. It makes little sense for the government to tell itself not to do such and such. The only instance where I see such an FDA to come into existence is near election day. Candidates may use this as a talking point for votes and then not carry any of it out because in the end the only goal of the US government is war.</p>
+<p>I also agree with Dr.&nbsp;Gebru’s comment that scientists align with power. I initially didn’t think she would say this because she is one of the scientists herself. Her talk is very consistent with what Lenin wrote about the intelligentsia in the struggle of the working class: university-educated people uphold the status quo and cannot be trusted. They are far removed from the struggle of the masses and sharpen the knife to the throat of the poor.</p>
+<p>In the evening, Dr.&nbsp;Gebru talked about how AI companies exploit Kenyan workers to moderate traumatizing content for 2 dollars an hour. At the end of the talk, somebody asked if this would ultimately lead to a trickling down of technology, like the way people in poorer countries now have access to the iPhone etc, which is a good thing. Dr.&nbsp;Gebru disagreed with this, saying that some technology would still be withheld from these countries, and technology whose development is drenched in blood will never be ultimately good. This makes sense, because even though everybody has access to the iPhone, I’m pretty sure that Apple exploits workers in the global south and extracts resources from poor countries to maximize profit.</p>
+<p>Dr.&nbsp;Gebru also talked about the eugenics intrinsic to AGI, how eugenics never goes away but instead keeps coming back in different forms that seems increasingly more progressive. I didn’t know about this before the talk, but I agree with everything she said because it makes perfect sense. It makes sense that AGI does not close the gap between the rich and poor but further widens it. The goal of AGI is to create a powerful model that can solve everything, like a chatbot for people too poor to afford healthcare etc., which sounds horrible. I always had my doubts about these new technologies because they are funded by the rich and designed in a very top-down sort of way. If the scientists involved in these projects are so far removed from the masses, they will surely develop models that persecute rather than uplift people.</p>
+<p>There are actually models who are built in a bottom-up fashion, where the scientists involved aim to solve problems rather than disappear them. But they don’t get any funding because bigger, sloppy models take funding away from them.</p>
+<p>At the end of the talk, Dr.&nbsp;Gebru mentions the co-option of safety, where people who are concerned about the evils of AGI keep talking about a distant, sci-fi sort of dystopia where robots become self-aware and destroy people. This diverts serious concern away from real, current disasters where people are being exploited, surveilled and destroyed by AI technology. This reminds me of that book <em>The Handmaid’s Tale</em>. After this book came out, every discourse about a woman’s autonomy over her body revolved about this book, which describes a distant, sci-fi, extreme scenario, rather than real people with real struggles in real countries that we know nothing about because <em>The Handmaid’s Tale</em> was the only talking point.</p>
+<p>Again, I agreed with everything Dr.&nbsp;Gebru said, not because I am incapable of critical thinking. I critically thinkingly agreed with her. I believe that the most important thing to learn from her talk is that when you encounter new technology, you have to think really hard about who is funding it, for what purpose, who it is benefiting, and who it is destroying.</p>
+</section>
+<section id="part-3-reflect-on-the-process" class="level1">
+<h1>Part 3: Reflect on the Process</h1>
+<p>I didn’t expect to enjoy learning from Dr.&nbsp;Gebru this much. I usually don’t like attending talks by guest scientists because they’re usually too technical for me to understand. Dr.&nbsp;Gebru took a very human approach with this talk: she constructed her arguments around real people, real issues that everybody understands. She does not concern us with arguments about some theoretical work. I like the fact that everything she said resonates with what I read from Marx and Lenin, but she didn’t bring up anything by them. I think that if somebody keeps bringing up quotations from books to prove that they’re right, then they don’t really know what they’re talking about. Dr.&nbsp;Gebru is very empirical with her work; she grounds her talking points in the suffering of the people exploited by tech companies. That’s what makes her talks so engaging and memorable.</p>
+
+
+</section>
+
+</main> <!-- /main -->
+<script id="quarto-html-after-body" type="application/javascript">
+window.document.addEventListener("DOMContentLoaded", function (event) {
+  const toggleBodyColorMode = (bsSheetEl) => {
+    const mode = bsSheetEl.getAttribute("data-mode");
+    const bodyEl = window.document.querySelector("body");
+    if (mode === "dark") {
+      bodyEl.classList.add("quarto-dark");
+      bodyEl.classList.remove("quarto-light");
+    } else {
+      bodyEl.classList.add("quarto-light");
+      bodyEl.classList.remove("quarto-dark");
+    }
+  }
+  const toggleBodyColorPrimary = () => {
+    const bsSheetEl = window.document.querySelector("link#quarto-bootstrap");
+    if (bsSheetEl) {
+      toggleBodyColorMode(bsSheetEl);
+    }
+  }
+  toggleBodyColorPrimary();  
+  const icon = "";
+  const anchorJS = new window.AnchorJS();
+  anchorJS.options = {
+    placement: 'right',
+    icon: icon
+  };
+  anchorJS.add('.anchored');
+  const clipboard = new window.ClipboardJS('.code-copy-button', {
+    target: function(trigger) {
+      return trigger.previousElementSibling;
+    }
+  });
+  clipboard.on('success', function(e) {
+    // button target
+    const button = e.trigger;
+    // don't keep focus
+    button.blur();
+    // flash "checked"
+    button.classList.add('code-copy-button-checked');
+    var currentTitle = button.getAttribute("title");
+    button.setAttribute("title", "Copied!");
+    setTimeout(function() {
+      button.setAttribute("title", currentTitle);
+      button.classList.remove('code-copy-button-checked');
+    }, 1000);
+    // clear code selection
+    e.clearSelection();
+  });
+  function tippyHover(el, contentFn) {
+    const config = {
+      allowHTML: true,
+      content: contentFn,
+      maxWidth: 500,
+      delay: 100,
+      arrow: false,
+      appendTo: function(el) {
+          return el.parentElement;
+      },
+      interactive: true,
+      interactiveBorder: 10,
+      theme: 'quarto',
+      placement: 'bottom-start'
+    };
+    window.tippy(el, config); 
+  }
+  const noterefs = window.document.querySelectorAll('a[role="doc-noteref"]');
+  for (var i=0; i<noterefs.length; i++) {
+    const ref = noterefs[i];
+    tippyHover(ref, function() {
+      // use id or data attribute instead here
+      let href = ref.getAttribute('data-footnote-href') || ref.getAttribute('href');
+      try { href = new URL(href).hash; } catch {}
+      const id = href.replace(/^#\/?/, "");
+      const note = window.document.getElementById(id);
+      return note.innerHTML;
+    });
+  }
+  var bibliorefs = window.document.querySelectorAll('a[role="doc-biblioref"]');
+  for (var i=0; i<bibliorefs.length; i++) {
+    const ref = bibliorefs[i];
+    const cites = ref.parentNode.getAttribute('data-cites').split(' ');
+    tippyHover(ref, function() {
+      var popup = window.document.createElement('div');
+      cites.forEach(function(cite) {
+        var citeDiv = window.document.createElement('div');
+        citeDiv.classList.add('hanging-indent');
+        citeDiv.classList.add('csl-entry');
+        var biblioDiv = window.document.getElementById('ref-' + cite);
+        if (biblioDiv) {
+          citeDiv.innerHTML = biblioDiv.innerHTML;
+        }
+        popup.appendChild(citeDiv);
+      });
+      return popup.innerHTML;
+    });
+  }
+});
+</script>
+</div> <!-- /content -->
+
+
+
+</body></html>
