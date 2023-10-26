@@ -2,7 +2,8 @@
   {
     "listing": "/index.html",
     "items": [
-      "/posts/project_blogpost/project.html",
+      "/posts/race_detection/code/training.html",
+      "/posts/race_detection/post/blogpost.html",
       "/posts/adam/adam.html",
       "/posts/unsupervised/unsupervised.html",
       "/posts/audit/audit.html",
